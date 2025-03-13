@@ -7,7 +7,8 @@
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <h2>Nowshin Fabiha Ibnat</h2>
-          <p>Bachelor of Science in Software Engineering</p>
+          <p>I'm <span class="typed" data-typed-items="Developer, UI/UX Designer">Develpoer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+          <!-- <p>Bachelor of Science in Software Engineering</p> -->
           <a href="about.php" class="btn-get-started">About Me</a>
         </div>
       </div>

@@ -33,6 +33,18 @@
 
 <!-- Main JS File -->
 <script src="assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var typed = new Typed(".typed", {
+      strings: document.querySelector(".typed").getAttribute("data-typed-items").split(','),
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000,
+      loop: true
+    });
+  });
+</script>
 
 </body>
 </html>
