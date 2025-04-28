@@ -1,12 +1,12 @@
 /**
-* PHP Email Form Validation - v3.10
-* URL: https://bootstrapmade.com/php-email-form/
+* html Email Form Validation - v3.10
+* URL: https://bootstrapmade.com/html-email-form/
 * Author: BootstrapMade.com
 */
 (function () {
   "use strict";
 
-  let forms = document.querySelectorAll('.php-email-form');
+  let forms = document.querySelectorAll('.html-email-form');
 
   forms.forEach( function(e) {
     e.addEventListener('submit', function(event) {
@@ -31,10 +31,10 @@
         if(typeof grecaptcha !== "undefined" ) {
           grecaptcha.ready(function() {
             try {
-              grecaptcha.execute(recaptcha, {action: 'php_email_form_submit'})
+              grecaptcha.execute(recaptcha, {action: 'html_email_form_submit'})
               .then(token => {
                 formData.set('recaptcha-response', token);
-                php_email_form_submit(thisForm, action, formData);
+                html_email_form_submit(thisForm, action, formData);
               })
             } catch(error) {
               displayError(thisForm, error);
@@ -44,12 +44,12 @@
           displayError(thisForm, 'The reCaptcha javascript API url is not loaded!')
         }
       } else {
-        php_email_form_submit(thisForm, action, formData);
+        html_email_form_submit(thisForm, action, formData);
       }
     });
   });
 
-  function php_email_form_submit(thisForm, action, formData) {
+  function html_email_form_submit(thisForm, action, formData) {
     fetch(action, {
       method: 'POST',
       body: formData,

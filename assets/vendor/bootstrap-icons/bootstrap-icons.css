@@ -1635,7 +1635,7 @@ url("./fonts/bootstrap-icons.woff?dd67030699838ea613ee6dbda90effa6") format("wof
 .bi-filetype-mp4::before { content: "\f754"; }
 .bi-filetype-otf::before { content: "\f755"; }
 .bi-filetype-pdf::before { content: "\f756"; }
-.bi-filetype-php::before { content: "\f757"; }
+.bi-filetype-html::before { content: "\f757"; }
 .bi-filetype-png::before { content: "\f758"; }
 .bi-filetype-ppt::before { content: "\f75a"; }
 .bi-filetype-psd::before { content: "\f75b"; }
